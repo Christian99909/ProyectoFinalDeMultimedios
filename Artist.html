@@ -98,35 +98,11 @@
 			<section class="main-content">
 				
                 <h1 class="infoArtist">Información del Artista</h1>
-                <div id="artist-info"></div>
-              
-                <script class="scriptArtist">
-                  $(document).ready(function() {
-                    var accessToken = 'BQDBKJ5eo5jxbtpWjVOj7ryS84khybFpP_lTqzV7uV-T_m0cTfwvdn5BnBSKPxKgEb11';
-                    var apiUrl = 'https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb';
-              
-                    $.ajax({
-                      url: apiUrl,
-                      type: 'GET',
-                      beforeSend: function(xhr) {
-                        xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);
-                      },
-                      success: function(response) {
-                        var artistInfo = '<h2 class="responseName">' + response.name + '</h2>';
-                        artistInfo += '<p class="seguidores">Seguidores: ' + response.followers.total + '</p>';
-                        artistInfo += '<p class="genre">Géneros: ' + response.genres.join(', ') + '</p>';
-                        artistInfo += '<img class="imgArtist" src="' + response.images[0].url + '" alt="Imagen del artista">';
-              
-                        $('#artist-info').html(artistInfo);
-                      },
-                      error: function(error) {
-                        console.log('Error:', error);
-                      }
-                    });
-                  });
-                </script>
                 
-					
+				<div id="artist-info" class="artist-info"></div>
+
+				<div id="artist-details" class="artist-details"></div>
+
                 
 			</section>
 
@@ -141,13 +117,13 @@
                       <div class="progress-bar"></div>
                 </div>
                
-              </div>
+            </div>
+
 		</main>
 		
 		<script
 			src="https://kit.fontawesome.com/81581fb069.js"
 		></script>
-        
         
         <script src="api.js"></script>
 	</body>

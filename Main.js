@@ -31,12 +31,12 @@ const searchArtist = async (artistName) => {
 };
 
 // Manejo del evento de búsqueda
-const searchButton = document.getElementById('search-button');
+const searchButton = document.getElementById('card-concentracion');
 const artistInput = document.getElementById('artist-input');
 const resultsDiv = document.getElementById('results');
 
 searchButton.addEventListener('click', async () => {
-  const artistName = artistInput.value;
+  const artistName = urlParams.get('cadena');
   const artists = await searchArtist(artistName);
 
   let html = '';

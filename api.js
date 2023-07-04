@@ -1,8 +1,13 @@
 //INFORMACION DEL ARTISTA--------------------------------------------------------------------------
+
+var artist;
+var idAlbum;
 document.addEventListener('DOMContentLoaded', function() {
+
+  artist = new URLSearchParams(window.location.search).get('artist');
   var clientId = 'e44e9944a8dc4ff1aee0224c7e6f2fcc';
   var clientSecret = '90b9fd64675d4112ad07e4e9f6bfcd8a';
-  var apiUrl = 'https://api.spotify.com/v1/artists/1Yox196W7bzVNZI7RBaPnf?si=zF4HW-TCQhOm6M6jvJfzdw';
+  var apiUrl = 'https://api.spotify.com/v1/artists/' + artist + '?si=zF4HW-TCQhOm6M6jvJfzdw';
 
   // https://open.spotify.com/artist/1Yox196W7bzVNZI7RBaPnf?si=zF4HW-TCQhOm6M6jvJfzdw
 
@@ -67,10 +72,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //ALBUMES ------------------------------------------------------------------------------
+var artist = new URLSearchParams(window.location.search).get('artist');
 document.addEventListener('DOMContentLoaded', function() {
   var clientId = 'e44e9944a8dc4ff1aee0224c7e6f2fcc';
   var clientSecret = '90b9fd64675d4112ad07e4e9f6bfcd8a';
-  var artistId = '1Yox196W7bzVNZI7RBaPnf';
+  var artistId = artist;
 
   // Realiza una solicitud para obtener el token de acceso
   fetch('https://accounts.spotify.com/api/token', {
@@ -128,6 +134,8 @@ document.addEventListener('DOMContentLoaded', function() {
           albumContainer.appendChild(albumInfo);
 
           albumsContainer.appendChild(albumContainer);
+
+          
         });
       } else {
         console.log('La respuesta de la API no contiene la propiedad "items".', response);

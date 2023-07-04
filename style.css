@@ -559,7 +559,7 @@ a.selected{
 	  }
 	  
 	  .infoExt {
-		font-size: 0.5rem;
+		font-size: 0.8rem;
 		margin: 2rem;
 		color: white;
 	  }
@@ -602,7 +602,7 @@ a.selected{
 	  .album-info h3 {
 		margin-top: 0;
 		color: #1DB954;
-		font-size: 0.5rem;
+		font-size: 0.8rem;
 	  }
 	  
 	  .album-info p {

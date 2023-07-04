@@ -458,6 +458,7 @@ a.selected{
 	color: white;
 	border-radius: 2rem;
 	width: 80%;
+	padding: 0px;
 	
   }
 
@@ -484,7 +485,49 @@ a.selected{
 }
 
 @media screen and (max-width: 768px) {
+
+	.oneAlbum{
+		display: flex;
+		align-items: center;
+		background: linear-gradient(to top, #000000, #e59f2e);
+		margin: 0.5rem;
+		border-radius: 2rem;
+		width: 100%;
+		padding: 0%;
+		height: auto;
+	}
 	
+	.album-image{
+
+		width: 40%;
+		padding: 0px;
+		height: auto;
+		border-radius: 50%;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+		margin: 0.8rem;
+	}
+	.album-image img{
+
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+		margin: 0.5rem;
+	}
+
+	.album-details {
+		width: 40%;
+		padding: 0%;
+		height: auto;
+		color: white;
+		font-size: 0.8rem;
+	
+	}
+	.album-details h2{
+		color: white;
+		font-size: 0.9rem;
+	
+	}
 	/* Estilos responsivos para dispositivos móviles */
 	.track-title {
 		font-weight: bold;

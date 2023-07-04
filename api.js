@@ -7,11 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   artist = new URLSearchParams(window.location.search).get('artist');
   var clientId = 'e44e9944a8dc4ff1aee0224c7e6f2fcc';
   var clientSecret = '90b9fd64675d4112ad07e4e9f6bfcd8a';
-<<<<<<< HEAD
   var apiUrl = 'https://api.spotify.com/v1/artists/' + artist + '?si=zF4HW-TCQhOm6M6jvJfzdw';
-=======
-  var apiUrl = 'https://api.spotify.com/v1/artists/1Yox196W7bzVNZI7RBaPnf';
->>>>>>> aab07218e18fe1212dbaaabbb24b3bee909d8c41
 
   // https://open.spotify.com/artist/1Yox196W7bzVNZI7RBaPnf?si=zF4HW-TCQhOm6M6jvJfzdw
 

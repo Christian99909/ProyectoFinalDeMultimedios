@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   var clientId = 'e44e9944a8dc4ff1aee0224c7e6f2fcc';
   var clientSecret = '90b9fd64675d4112ad07e4e9f6bfcd8a';
-  var apiUrl = 'https://api.spotify.com/v1/artists/1Yox196W7bzVNZI7RBaPnf?si=zF4HW-TCQhOm6M6jvJfzdw';
+  var apiUrl = 'https://api.spotify.com/v1/artists/1Yox196W7bzVNZI7RBaPnf';
 
   // https://open.spotify.com/artist/1Yox196W7bzVNZI7RBaPnf?si=zF4HW-TCQhOm6M6jvJfzdw
 
